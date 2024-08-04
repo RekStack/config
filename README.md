@@ -2,3 +2,4 @@
 
 - ESLint
   - React
+- Prettier

@@ -8,8 +8,12 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-  { languageOptions: { globals: { ...globals.browser, ...globals.node } }, settings: { react: { version: 'detect' } } },
+  { name: 'Files', files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
+  {
+    name: 'Options',
+    languageOptions: { globals: { ...globals.browser, ...globals.node } },
+    settings: { react: { version: 'detect' } },
+  },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,

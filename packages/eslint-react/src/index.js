@@ -12,9 +12,7 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
-
   // ...tanstackConfig,
-
   {
     // Custom rules go here
   },

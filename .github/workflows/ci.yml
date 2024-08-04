@@ -33,8 +33,6 @@ jobs:
           fetch-depth: '0'
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        # with:
-        #   version: 9
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -46,6 +44,7 @@ jobs:
           echo "Log level: ${{ inputs.logLevel }}"
           echo "Tags: ${{ inputs.tags }}"
           echo "Tag: ${{ inputs.tag }}"
+          echo "Inputs : ${{ inputs }}"
       - name: Publish
         run: |
           git config --global user.name 'Rui Araújo'

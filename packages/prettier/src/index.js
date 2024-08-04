@@ -1,6 +1,6 @@
 /** @type {import("prettier").Config} */
 export default {
-  plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-organize-imports'],
+  plugins: ['prettier-plugin-organize-imports', '@ianvs/prettier-plugin-sort-imports'],
   arrowParens: 'always',
   jsxSingleQuote: true,
   printWidth: 120,

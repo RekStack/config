@@ -40,9 +40,6 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
-      - run: |
-          echo "Log level: ${{ github.event.inputs.logLevel }}"
-          echo "Tags: ${{ github.event.inputs.tags }}"
       - name: Publish
         run: |
           git config --global user.name 'Rui Araújo'

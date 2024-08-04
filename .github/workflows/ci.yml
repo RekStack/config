@@ -45,7 +45,7 @@ jobs:
           git config --global user.name 'Rui Araújo'
           git config --global user.email 'ruiaraujo012@users.noreply.github.com'
           npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-          pnpm run cipublish
+          TAG=${TAG} pnpm run cipublish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

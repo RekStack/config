@@ -16,14 +16,6 @@
   },
   "type": "module",
   "packageManager": "pnpm@9.6.0",
-  "exports": {
-    "./eslint-react": {
-      "import": {
-        "default": "./packages/eslint-react/src/eslint/index.js"
-      }
-    },
-    "./package.json": "./package.json"
-  },
   "scripts": {
     "cipublish": "node scripts/publish.js"
   },

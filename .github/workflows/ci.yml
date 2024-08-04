@@ -1,4 +1,4 @@
-name: ci
+name: Publish
 
 on:
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
   publish:
     name: Publish
 
-    if: github.repository_owner == 'RekStack'
+    if: ${{github.repository_owner == 'RekStack'}}
 
     runs-on: ubuntu-latest
     steps:
@@ -53,4 +53,3 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           TAG: ${{ inputs.tag }}
-          TAGS: ${{ inputs.tags }}

@@ -3,6 +3,14 @@
     "name": "Rui Araújo"
   },
   "description": "",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./src/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "keywords": [],
   "license": "ISC",
   "name": "@rekstack/eslint-react",

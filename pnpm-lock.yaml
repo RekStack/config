@@ -38,6 +38,10 @@ importers:
       typescript-eslint:
         specifier: ^8.0.0
         version: 8.0.0(eslint@9.8.0)(typescript@5.5.4)
+    devDependencies:
+      '@eslint/compat':
+        specifier: ^1.1.1
+        version: 1.1.1
 
   packages/prettier:
     dependencies:
@@ -50,10 +54,6 @@ importers:
       prettier-plugin-organize-imports:
         specifier: ^4.0.0
         version: 4.0.0(prettier@3.3.3)(typescript@5.5.4)
-    devDependencies:
-      '@eslint/compat':
-        specifier: ^1.1.1
-        version: 1.1.1
 
 packages:
 

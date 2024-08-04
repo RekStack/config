@@ -3,13 +3,10 @@
     "name": "Rui Araújo"
   },
   "dependencies": {
-    "@eslint/js": "^9.8.0",
-    "eslint": "9.8.0",
-    "eslint-plugin-react": "^7.35.0",
-    "globals": "^15.9.0",
-    "typescript-eslint": "^8.0.0"
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+    "prettier": "^3.3.3"
   },
-  "description": "RekStack ESLint react config",
+  "description": "RekStack Prettier config",
   "exports": {
     ".": {
       "import": {
@@ -19,13 +16,12 @@
     "./package.json": "./package.json"
   },
   "keywords": [
-    "eslint",
-    "react"
+    "prettier"
   ],
   "license": "MIT",
-  "name": "@rekstack/eslint-react",
+  "name": "@rekstack/prettier",
   "repository": {
-    "directory": "packages/eslint-react",
+    "directory": "packages/prettier",
     "type": "git",
     "url": "https://github.com/RekStack/config.git"
   },

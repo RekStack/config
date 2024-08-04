@@ -44,7 +44,6 @@ jobs:
           echo "Log level: ${{ inputs.logLevel }}"
           echo "Tags: ${{ inputs.tags }}"
           echo "Tag: ${{ inputs.tag }}"
-          echo "Inputs : ${{ inputs }}"
       - name: Publish
         run: |
           git config --global user.name 'Rui Araújo'

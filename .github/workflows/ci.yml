@@ -6,6 +6,11 @@ on:
       tag:
         description: override release tag
         required: false
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+
   push:
     branches: ['main', 'alpha', 'beta', 'next']
 
@@ -26,12 +31,6 @@ jobs:
     if: github.repository_owner == 'RekStack'
 
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      TAG: ${{ inputs.tag }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -51,4 +50,11 @@ jobs:
           git config --global user.name 'Rui Araújo'
           git config --global user.email 'ruiaraujo012@users.noreply.github.com'
           npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-          TAG=${TAG} pnpm run cipublish
+          pnpm run cipublish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          TAG: ${{ inputs.tag }}
+          TAGS: ${{ inputs.tags }}

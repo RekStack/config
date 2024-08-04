@@ -15,6 +15,7 @@
     "url": "https://github.com/sponsors/ruiaraujo012"
   },
   "type": "module",
+  "version": "0.0.1",
   "packageManager": "pnpm@9.6.0",
   "scripts": {    
     "build": "publint --strict",

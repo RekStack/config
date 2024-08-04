@@ -1,1 +1,4 @@
-# config
+# RekStack configs
+
+- ESLint
+  - React

@@ -1,4 +1,4 @@
-name: Publish
+name: ci
 
 on:
   workflow_dispatch:
@@ -6,25 +6,23 @@ on:
       tag:
         description: override release tag
         required: false
-
   push:
-    tags: ['v*']
+    branches: ['main', 'alpha', 'beta', 'next']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
   cancel-in-progress: true
 
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
-  id-token: write
-
 jobs:
   publish:
     name: Publish
 
-    if: ${{github.repository_owner == 'RekStack'}}
+    # if: github.repository == 'RekStack/config'
+
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
 
     runs-on: ubuntu-latest
     steps:

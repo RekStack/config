@@ -3,7 +3,7 @@
   "private": true,
   "description": "RekStack Config",
   "author": {
-    "name": "Rui Ara\u00fajo"
+    "name": "Rui Araujo"
   },
   "license": "MIT",
   "repository": {
@@ -15,7 +15,6 @@
     "url": "https://github.com/sponsors/ruiaraujo012"
   },
   "type": "module",
-  "version": "0.1.0",
   "packageManager": "pnpm@9.6.0",
   "scripts": {
     "build": "publint --strict",

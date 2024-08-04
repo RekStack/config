@@ -7,7 +7,7 @@ await publish({
   ghToken: process.env.GH_TOKEN,
   packages,
   rootDir,
-  tag: 'v0.0.1',
+  tag: process.env.TAG,
 })
   .then(() => {
     console.log('Successfully published packages!');

@@ -9,7 +9,6 @@ export const packages = [
   {
     name: '@rekstack/eslint-react',
     packageDir: 'packages/eslint-react',
-    entryPoints: ['src/index.js'],
   },
 ];
 

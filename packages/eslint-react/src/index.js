@@ -1,8 +1,8 @@
-// import { tanstackConfig } from '@tanstack/config/eslint';
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
+// import { tanstackConfig } from '@tanstack/config/eslint';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -12,7 +12,9 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
+
   // ...tanstackConfig,
+
   {
     // Custom rules go here
   },

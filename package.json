@@ -1,6 +1,6 @@
 {
-  "name": "@rekstack/root",
-  "version": "0.0.0",
+  "name": "root",
+  "private": true,
   "description": "RekStack Config",
   "author": {
     "name": "Rui Araújo"
@@ -16,7 +16,6 @@
   },
   "type": "module",
   "packageManager": "pnpm@9.6.0",
-  "sideEffects": false,
   "scripts": {
     "cipublish": "node scripts/publish.js"
   },

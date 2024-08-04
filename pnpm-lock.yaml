@@ -15,6 +15,8 @@ importers:
         specifier: ^0.2.8
         version: 0.2.9
 
+  packages/eslint-react: {}
+
 packages:
 
   '@babel/helper-string-parser@7.24.8':

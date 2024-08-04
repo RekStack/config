@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "Rui Araújo"
+  },
+  "description": "",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./src/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "src/index.js",
+  "name": "@rekstack/eslint-react",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "version": "0.0.1"
+}

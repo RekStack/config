@@ -6,13 +6,9 @@ on:
       tag:
         description: override release tag
         required: false
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
 
   push:
-    branches: ['main', 'alpha', 'beta', 'next']
+    tags: ['v*']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}

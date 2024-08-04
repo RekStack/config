@@ -12,11 +12,10 @@ export default {
   useTabs: false,
   importOrder: [
     '^react$',
-    '',
+    '// Third party modules',
     '<THIRD_PARTY_MODULES>',
     '',
     '^@/(.*)$',
-    '',
     '^[./]',
     '',
     '<TYPES>^(node:)',

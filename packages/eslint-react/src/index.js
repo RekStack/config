@@ -5,6 +5,7 @@ import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
 import unusedImports from 'eslint-plugin-unused-imports';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+
 // import { tanstackConfig } from '@tanstack/config/eslint';
 
 /** @type {import('eslint').Linter.Config[]} */

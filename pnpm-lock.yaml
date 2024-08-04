@@ -17,6 +17,9 @@ importers:
 
   packages/eslint-react:
     dependencies:
+      '@eslint/compat':
+        specifier: ^1.1.1
+        version: 1.1.1
       '@eslint/js':
         specifier: ^9.8.0
         version: 9.8.0
@@ -38,10 +41,6 @@ importers:
       typescript-eslint:
         specifier: ^8.0.0
         version: 8.0.0(eslint@9.8.0)(typescript@5.5.4)
-    devDependencies:
-      '@eslint/compat':
-        specifier: ^1.1.1
-        version: 1.1.1
 
   packages/prettier:
     dependencies:

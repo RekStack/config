@@ -10,6 +10,10 @@ export const packages = [
     name: '@rekstack/eslint-react',
     packageDir: 'packages/eslint-react',
   },
+  {
+    name: '@rekstack/prettier',
+    packageDir: 'packages/prettier',
+  },
 ];
 
 /**

@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
 import unusedImports from 'eslint-plugin-unused-imports';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+import { fixupPluginRules } from '@eslint/compat';
 // import { tanstackConfig } from '@tanstack/config/eslint';
 
 /** @type {import('eslint').Linter.Config[]} */
@@ -20,7 +21,7 @@ export default [
   pluginReact.configs.flat['jsx-runtime'],
   {
     plugins: {
-      'unused-imports': unusedImports,
+      'unused-imports': fixupPluginRules(unusedImports),
     },
     rules: {
       // 'no-unused-vars': 'off',

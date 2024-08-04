@@ -16,7 +16,7 @@ importers:
         version: 0.2.9
 
   packages/eslint-react:
-    devDependencies:
+    dependencies:
       '@eslint/js':
         specifier: ^9.8.0
         version: 9.8.0

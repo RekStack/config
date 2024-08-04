@@ -3,6 +3,9 @@
     "name": "Rui Araújo"
   },
   "description": "",
+  "devDependencies": {
+    "eslint": "8.57.0"
+  },
   "exports": {
     ".": {
       "import": {

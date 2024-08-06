@@ -62,7 +62,7 @@ export default [
             kebabCase: true,
             pascalCase: true,
           },
-          ignore: [/routes\/.*\.(js|jsx|ts|tsx)$/],
+          ignore: [/routes\/.*\.(js|jsx|ts|tsx)$/, 'routeTree.gen.ts'],
         },
       ],
     },

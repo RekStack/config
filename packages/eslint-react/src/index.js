@@ -54,7 +54,7 @@ export default [
           },
         },
       ],
-      'eslint unicorn/no-null': ['off'],
+      'unicorn/no-null': ['off'],
       'unicorn/filename-case': [
         'error',
         {

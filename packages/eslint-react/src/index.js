@@ -54,6 +54,16 @@ export default [
           },
         },
       ],
+      'eslint unicorn/no-null': ['off'],
+      'unicorn/filename-case': [
+        'error',
+        {
+          cases: {
+            kebabCase: true,
+            pascalCase: true,
+          },
+        },
+      ],
     },
   },
   // Needs to be at the end

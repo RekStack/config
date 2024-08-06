@@ -1,18 +1,38 @@
 {
+  "name": "@rekstack/eslint-react",
+  "description": "RekStack ESLint react config",
+  "version": "1.0.0-beta.15",
   "author": {
     "name": "Rui Araújo"
   },
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/eslint-react",
+    "type": "git",
+    "url": "https://github.com/RekStack/config.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ruiaraujo012"
+  },
+  "keywords": [
+    "eslint",
+    "react"
+  ],
+  "type": "module",
+  "sideEffects": false,
   "dependencies": {
     "@eslint/compat": "^1.1.1",
     "@eslint/js": "^9.8.0",
     "eslint": "9.8.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-unicorn": "^55.0.0",
     "eslint-plugin-unused-imports": "^4.0.1",
     "globals": "^15.9.0",
     "typescript-eslint": "^8.0.0"
   },
-  "description": "RekStack ESLint react config",
   "exports": {
     ".": {
       "import": {
@@ -20,19 +40,5 @@
       }
     },
     "./package.json": "./package.json"
-  },
-  "keywords": [
-    "eslint",
-    "react"
-  ],
-  "license": "MIT",
-  "name": "@rekstack/eslint-react",
-  "repository": {
-    "directory": "packages/eslint-react",
-    "type": "git",
-    "url": "https://github.com/RekStack/config.git"
-  },
-  "sideEffects": false,
-  "type": "module",
-  "version": "1.0.0-beta.15"
+  }
 }

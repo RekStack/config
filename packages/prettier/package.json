@@ -1,13 +1,30 @@
 {
+  "name": "@rekstack/prettier",
+  "description": "RekStack Prettier config",
+  "version": "1.0.0-beta.14",
   "author": {
     "name": "Rui Araújo"
   },
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/prettier",
+    "type": "git",
+    "url": "https://github.com/RekStack/config.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ruiaraujo012"
+  },
+  "keywords": [
+    "prettier"
+  ],
+  "type": "module",
+  "sideEffects": false,
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "prettier": "^3.3.3",
     "prettier-plugin-organize-imports": "^4.0.0"
   },
-  "description": "RekStack Prettier config",
   "exports": {
     ".": {
       "import": {
@@ -15,18 +32,5 @@
       }
     },
     "./package.json": "./package.json"
-  },
-  "keywords": [
-    "prettier"
-  ],
-  "license": "MIT",
-  "name": "@rekstack/prettier",
-  "repository": {
-    "directory": "packages/prettier",
-    "type": "git",
-    "url": "https://github.com/RekStack/config.git"
-  },
-  "sideEffects": false,
-  "type": "module",
-  "version": "1.0.0-beta.14"
+  }
 }

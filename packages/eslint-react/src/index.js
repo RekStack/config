@@ -5,8 +5,8 @@ import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
 import unusedImports from 'eslint-plugin-unused-imports';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-
-// import { tanstackConfig } from '@tanstack/config/eslint';
+import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -41,6 +41,7 @@ export default [
     },
   },
   jsxA11y.flatConfigs.recommended,
-  // ...tanstackConfig,
-  // Custom rules go here
+  eslintPluginUnicorn.configs['flat/recommended'],
+  // Needs to be at the end
+  eslintConfigPrettier,
 ];

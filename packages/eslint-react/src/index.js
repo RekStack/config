@@ -41,7 +41,21 @@ export default [
     },
   },
   jsxA11y.flatConfigs.recommended,
-  eslintPluginUnicorn.configs['flat/recommended'],
+  {
+    ...eslintPluginUnicorn.configs['flat/recommended'],
+    rules: {
+      ...eslintPluginUnicorn.configs['flat/recommended'].rules,
+      'unicorn/prevent-abbreviations': [
+        'error',
+        {
+          replacements: {
+            args: false,
+            props: false,
+          },
+        },
+      ],
+    },
+  },
   // Needs to be at the end
   eslintConfigPrettier,
 ];

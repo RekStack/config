@@ -52,6 +52,7 @@ export default [
             args: false,
             prop: false,
             props: false,
+            ref: false,
           },
         },
       ],

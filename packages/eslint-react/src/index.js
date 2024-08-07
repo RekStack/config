@@ -71,5 +71,8 @@ export default [
   },
   // Needs to be at the end of all rules
   eslintConfigPrettier,
-  { name: 'Files/folders to ignore', ignores: ['**/generated/**', '**/routeTree.gen.ts'] },
+  {
+    name: 'Files/folders to ignore',
+    ignores: ['node_modules/**', 'dist/**', 'build/**', '**/generated/**', '**/routeTree.gen.ts'],
+  },
 ];

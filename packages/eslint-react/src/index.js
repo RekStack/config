@@ -50,6 +50,7 @@ export default [
         {
           replacements: {
             args: false,
+            prop: false,
             props: false,
           },
         },

@@ -73,6 +73,6 @@ export default [
   eslintConfigPrettier,
   {
     name: 'Files/folders to ignore',
-    ignores: ['node_modules/**', 'dist/**', 'build/**', '**/generated/**', '**/routeTree.gen.ts'],
+    ignores: ['node_modules/**', 'dist/**', 'build/**', '**/generated/**', '**/routeTree.gen.ts', 'cypress/**'],
   },
 ];

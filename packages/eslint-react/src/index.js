@@ -11,6 +11,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   { name: 'Files', files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
+  { name: 'Files to ignore', ignores: ['routeTree.gen.ts'] },
   {
     name: 'Options',
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
@@ -62,7 +63,7 @@ export default [
             kebabCase: true,
             pascalCase: true,
           },
-          ignore: [/routes\/.*\.(js|jsx|ts|tsx)$/, 'routeTree.gen.ts'],
+          ignore: [/routes\/.*\.(js|jsx|ts|tsx)$/],
         },
       ],
     },

@@ -3,6 +3,7 @@ import pluginJs from '@eslint/js';
 import { fixupPluginRules } from '@eslint/compat';
 import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
+import pluginReactHooks from 'eslint-plugin-react-hooks';
 import unusedImports from 'eslint-plugin-unused-imports';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
@@ -20,6 +21,43 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
+  pluginReactHooks.configs.flat.recommended,
+  {
+    plugins: {
+      'react-hooks': fixupPluginRules(pluginReactHooks.rules),
+      react: pluginReact,
+    },
+    rules: {
+      // React
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+      'arrow-body-style': ['error', 'as-needed'],
+      'react/require-default-props': 'off',
+      'react/display-name': 'error',
+      'react/jsx-boolean-value': 'error',
+      'react/jsx-curly-brace-presence': [
+        'error',
+        {
+          props: 'never',
+        },
+      ],
+      'react/jsx-key': 'error',
+      'react/jsx-no-duplicate-props': 'error',
+      'react/jsx-no-undef': 'error',
+      'react/jsx-sort-props': 'warn',
+      'react/jsx-uses-react': 'off',
+      'react/jsx-uses-vars': 'error',
+      'react/no-danger': 'error',
+      'react/no-direct-mutation-state': 'error',
+      'react/no-string-refs': 'error',
+      'react/no-unknown-property': 'error',
+      'react/prefer-es6-class': 'error',
+      'react/prefer-stateless-function': 'error',
+      'react/react-in-jsx-scope': 'off',
+      'react/self-closing-comp': 'error',
+      'react/sort-prop-types': 'warn',
+    },
+  },
   {
     plugins: {
       'unused-imports': fixupPluginRules(unusedImports),
@@ -67,6 +105,17 @@ export default [
           ignore: [/routes\/.*\.(js|jsx|ts|tsx)$/],
         },
       ],
+    },
+  },
+  {
+    name: 'Custom rules',
+    rules: {
+      eqeqeq: ['error', 'always', { null: 'ignore' }],
+      'object-shorthand': 'error',
+      'no-useless-computed-key': 'error',
+      '@typescript-eslint/no-use-before-define': ['error'],
+      'prefer-template': 'error',
+      'sort-keys': ['warn', 'asc', { natural: true }],
     },
   },
   // Needs to be at the end of all rules

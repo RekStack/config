@@ -21,10 +21,10 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
-  pluginReactHooks.configs.flat.recommended,
+  // pluginReactHooks.configs.flat.recommended,
   {
     plugins: {
-      'react-hooks': fixupPluginRules(pluginReactHooks.rules),
+      'react-hooks': fixupPluginRules(pluginReactHooks),
       react: pluginReact,
     },
     rules: {

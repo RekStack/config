@@ -19,17 +19,12 @@ export default [
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
-  pluginReact.configs.flat['jsx-runtime'],
   {
-    plugins: {
-      'react-hooks': fixupPluginRules(pluginReactHooks),
-    },
+    ...pluginReact.configs.flat.recommended,
+    ...pluginReact.configs.flat['jsx-runtime'],
     rules: {
-      ...pluginReactHooks.rules,
-      // React
-      'react-hooks/rules-of-hooks': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
+      ...pluginReact.configs.flat.recommended.rules,
+      ...pluginReact.configs.flat['jsx-runtime'].rules,
       'arrow-body-style': ['error', 'as-needed'],
       'react/require-default-props': 'off',
       'react/display-name': 'error',
@@ -55,6 +50,16 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'react/self-closing-comp': 'error',
       'react/sort-prop-types': 'warn',
+    },
+  },
+  {
+    plugins: {
+      'react-hooks': fixupPluginRules(pluginReactHooks),
+    },
+    rules: {
+      // React
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
     },
   },
   {

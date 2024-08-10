@@ -21,13 +21,12 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
-  // pluginReactHooks.configs.flat.recommended,
   {
     plugins: {
       'react-hooks': fixupPluginRules(pluginReactHooks),
-      react: pluginReact,
     },
     rules: {
+      ...pluginReactHooks.rules,
       // React
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
@@ -94,6 +93,7 @@ export default [
           },
         },
       ],
+      'unicorn/no-useless-undefined': ['off'],
       'unicorn/no-null': ['off'],
       'unicorn/filename-case': [
         'error',

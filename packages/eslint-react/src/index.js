@@ -8,6 +8,7 @@ import unusedImports from 'eslint-plugin-unused-imports';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import pluginQuery from '@tanstack/eslint-plugin-query';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -17,6 +18,7 @@ export default [
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
     settings: { react: { version: 'detect' } },
   },
+  ...pluginQuery.configs['flat/recommended'],
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   {

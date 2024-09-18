@@ -118,7 +118,7 @@ export default [
     name: 'Custom rules',
     rules: {
       eqeqeq: ['error', 'always', { null: 'ignore' }],
-      'object-shorthand': 'error',
+      'object-shorthand': ['error', 'always'],
       'no-useless-computed-key': 'error',
       '@typescript-eslint/no-use-before-define': ['error'],
       'prefer-template': 'error',

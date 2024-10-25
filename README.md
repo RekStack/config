@@ -1,1 +1,5 @@
-# config
+# RekStack configs
+
+- ESLint
+  - React
+- Prettier

@@ -1,0 +1,46 @@
+{
+  "name": "@rekstack/eslint-react",
+  "description": "RekStack ESLint react config",
+  "version": "1.0.0-beta.35",
+  "author": {
+    "name": "Rui Araújo"
+  },
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/eslint-react",
+    "type": "git",
+    "url": "https://github.com/RekStack/config.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ruiaraujo012"
+  },
+  "keywords": [
+    "eslint",
+    "react"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "dependencies": {
+    "@eslint/compat": "^1.2.1",
+    "@eslint/js": "^9.13.0",
+    "@tanstack/eslint-plugin-query": "^5.59.7",
+    "eslint": "9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.10.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "globals": "^15.11.0",
+    "typescript-eslint": "^8.11.0"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./src/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "root",
+  "private": true,
+  "description": "RekStack Config",
+  "author": {
+    "name": "Rui Araujo"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RekStack/config.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ruiaraujo012"
+  },
+  "type": "module",
+  "packageManager": "pnpm@9.6.0",
+  "scripts": {
+    "build": "publint --strict",
+    "cipublish": "node scripts/publish.js"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "react"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "packages/**"
+  ],
+  "devDependencies": {
+    "@tanstack/config": "^0.13.4",
+    "publint": "^0.2.12"
+  }
+}

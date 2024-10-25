@@ -1,7 +1,7 @@
 {
   "name": "@rekstack/prettier",
   "description": "RekStack Prettier config",
-  "version": "1.0.0-beta.16",
+  "version": "1.0.0",
   "author": {
     "name": "Rui Araújo"
   },

@@ -32,7 +32,7 @@
     "packages/**"
   ],
   "devDependencies": {
-    "@tanstack/config": "^0.13.3",
-    "publint": "^0.2.11"
+    "@tanstack/config": "^0.13.4",
+    "publint": "^0.2.12"
   }
 }

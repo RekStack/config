@@ -55,10 +55,9 @@ export default [
     },
   },
   {
-    plugins: {
-      'react-hooks': fixupPluginRules(pluginReactHooks),
-    },
+    ...pluginReactHooks.configs.recommended,
     rules: {
+      ...pluginReactHooks.configs.recommended.rules,
       // React
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',

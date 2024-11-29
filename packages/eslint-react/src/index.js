@@ -111,7 +111,7 @@ export default [
             kebabCase: true,
             pascalCase: true,
           },
-          ignore: ['**/routes/**'],
+          ignore: [/^(?:.*\/)*routes\/.*\.(js|ts|jsx|tsx)$/],
         },
       ],
     },

@@ -1,7 +1,7 @@
 {
   "name": "@rekstack/eslint-react",
   "description": "RekStack ESLint react config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": {
     "name": "Rui Araújo"
   },

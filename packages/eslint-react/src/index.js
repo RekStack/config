@@ -1,4 +1,5 @@
 import globals from 'globals';
+import { defineConfig } from 'eslint/config';
 import pluginJs from '@eslint/js';
 import { fixupPluginRules } from '@eslint/compat';
 import tseslint from 'typescript-eslint';
@@ -10,8 +11,7 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import pluginQuery from '@tanstack/eslint-plugin-query';
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
+export default defineConfig([
   { name: 'Files', files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   {
     name: 'Options',
@@ -133,4 +133,4 @@ export default [
     name: 'Files/folders to ignore',
     ignores: ['node_modules/**', 'dist/**', 'build/**', '**/generated/**', '**/routeTree.gen.ts', 'cypress/**'],
   },
-];
+]);

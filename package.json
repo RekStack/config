@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "description": "RekStack Config",
+  "version": "1.0.0",
   "author": {
     "name": "Rui Araujo"
   },
@@ -15,7 +16,7 @@
     "url": "https://github.com/sponsors/ruiaraujo012"
   },
   "type": "module",
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "pnpm@10.7.1",
   "scripts": {
     "build": "publint --strict",
     "cipublish": "node scripts/publish.js"
